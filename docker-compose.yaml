@@ -1,0 +1,18 @@
+version: "3"
+services:
+  rabbitmq:
+    image: bitnami/rabbitmq:latest
+    container_name: rabbitMQ
+    ports:
+      - '15672:15672'
+      - '5672:5672'
+    volumes:
+      - './rabbitmqstats_data:/bitnami'
+  mongodb:
+    container_name: mongodb
+    image: mongo
+    restart: always
+    volumes:
+      - ./mongo_data:/data/db
+    ports:
+      - "27017:27017"
