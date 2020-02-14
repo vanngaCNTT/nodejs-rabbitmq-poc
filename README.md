@@ -34,7 +34,7 @@ node worker-receive.js
 ## How to test the code
 
 1. Start RabbitMQ
-2. Open RabbitMQ Manager in web browser at ``localhost:115672``
+2. Open RabbitMQ Manager in web browser at ``localhost:15672``
 3. Create a new Queues in Tab Queues
 4. Run Sending server
 5. Run Receive server
